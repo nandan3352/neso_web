@@ -1,0 +1,104 @@
+.paymentResultContainer {
+  margin: auto;
+  margin-top: 96px;
+  width: 100%;
+  max-width: 764px;
+  grid-column-gap: 20px;
+  display: flex;
+}
+
+.paymentResult {
+  border: 1px solid rgba(var(--theme-divider));
+  width: 470px;
+}
+
+.paymentResultHeader {
+  border-bottom: 1px solid rgba(var(--theme-divider));
+  height: 48px;
+  padding: 16px 24px;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 16px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: rgba(var(--theme-text-secondary));
+  box-sizing: border-box;
+}
+
+.paymentResultSubscriptionPlanDetails {
+  height: 88px;
+  box-sizing: border-box;
+  padding: 16px 24px;
+  border-bottom: 1px solid rgba(var(--theme-divider));
+  display: flex;
+  justify-content: space-between;
+}
+
+.paymentResultPlanInfo {
+  margin-top: 8px;
+}
+
+.paymentResultPriceIcon {
+  font-size: 24px;
+}
+
+.paymentResultPrice {
+  height: 56px;
+  display: flex;
+  align-items: center;
+  font-size: 45px;
+  line-height: 24px;
+  letter-spacing: 0.18px;
+  color: rgba(var(--theme-text-primary));
+}
+
+.paymentResultBody {
+  box-sizing: border-box;
+  display: grid;
+  padding: 24px 24px 36px;
+  grid-row-gap: 20px;
+  position: relative;
+}
+
+.GetReceiptButton {
+  position: absolute;
+  right: 24px;
+  bottom: 36px;
+}
+
+.GetReceiptButton .MuiButton-root {
+  color: var(--theme-secondary-main);
+}
+
+.paymentStatus {
+  border: 1px solid rgba(var(--theme-divider));
+  width: 274px;
+  height: inherit;
+  box-sizing: border-box;
+  padding: 36px 30px;
+  position: relative;
+}
+
+
+@media screen and (max-width : 480px) {
+  .paymentResultSubscriptionPlanDetails{
+    height: auto;
+    gap: 8px;
+  }
+  .paymentResultPrice{
+    font-size: 32px;
+  }
+  .GetReceiptButton{
+    bottom: 16px;
+  }
+  .paymentResultContainer {
+    flex-wrap: wrap-reverse;
+    grid-row-gap: 20px;
+    height: auto;
+    margin-top: 16px;
+  }
+
+  .paymentStatus {
+    width: 100%;
+  }
+}

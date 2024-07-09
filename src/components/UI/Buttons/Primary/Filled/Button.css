@@ -1,0 +1,29 @@
+.Primary-filled {
+    width: 93px;
+    height: 36px;
+    background:var(--theme-primary-main);
+    border-radius: 4px;
+    padding: 10px 16px;
+    color: var(--theme-cw-gradient);
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 1.25px;
+    text-transform: uppercase;
+    box-shadow: none;
+}
+
+.Primary-filled:hover {
+    width: 93px;
+    height: 36px;
+    background: var(--theme-primary-main);
+    border-radius: 4px;
+    padding: 10px 16px;
+    color: var(--theme-cw-gradient);
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 1.25px;
+    text-transform: uppercase;
+    box-shadow: none;
+}
+
+

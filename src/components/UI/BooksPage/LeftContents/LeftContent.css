@@ -1,0 +1,11 @@
+.left-content-section {
+  box-sizing: border-box;
+  padding: 88px 0 32px 0;
+  position: sticky;
+}
+
+section.left-content-section {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}

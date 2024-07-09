@@ -1,0 +1,124 @@
+@media only screen and (min-width: 1200px) {
+
+  .story-card {
+    width: 176px;
+    height: 228px;
+    background-size: contain;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: top ease 0.3s;
+    position: relative;
+    top: 0;
+  }
+
+  .story-card:hover {
+      top: -5px;
+  }
+
+  .story-title {
+    width: 152px;
+    height: 48px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    display: flex;
+    align-items: flex-end;
+    letter-spacing: 0.1px;
+    color: #ffffff;
+    padding: 148px 12px 4px 12px;
+  }
+
+  .time-ago {
+    width: 72px;
+    height: 20px;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.25px;
+    color: rgba(255, 255, 255, 0.74);
+    padding: 0 0 8px 12px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+
+  .story-card {
+    width: 176px;
+    height: 228px;
+    background-size: contain;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: top ease 0.3s;
+    position: relative;
+    top: 0;
+  }
+
+  .story-card:hover {
+    top: -5px;
+  }
+
+  .story-title {
+    width: 152px;
+    height: 48px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    display: flex;
+    align-items: flex-end;
+    letter-spacing: 0.1px;
+    color: #ffffff;
+    padding: 148px 12px 4px 12px;
+  }
+
+  .time-ago {
+    width: 72px;
+    height: 20px;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.25px;
+    color: rgba(255, 255, 255, 0.74);
+    padding: 0 0 8px 12px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+
+  .story-card {
+    width: 120px;
+    height: 200px;
+    cursor: pointer;
+    border-radius: 4px;
+    background-size: cover;
+    box-sizing: border-box;
+    transition: top ease 0.3s;
+    position: relative;
+    top: 0;
+  }
+
+  .story-card:hover {
+    top: -5px;
+  }
+
+  .story-title {
+    width: 104px;
+    height: 60px;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    display: flex;
+    align-items: flex-end;
+    letter-spacing: 0.25px;
+    color: #FFFFFF;
+    padding: 112px 8px 0px 8px;
+  }
+
+  .time-ago {
+    width: 69px;
+    height: 16px;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.4px;
+    color: rgba(255, 255, 255, 0.74);
+    padding-top: 4px;
+  }
+}

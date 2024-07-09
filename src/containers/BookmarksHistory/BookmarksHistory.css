@@ -1,0 +1,252 @@
+@media only screen and (min-width: 1200px) {
+  .bookmarksHistory-main {
+    min-height: 95vh;
+    display: flex;
+    justify-content: center;
+  }
+
+  .bookmarks-title {
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: 0.18px;
+    color: rgba(var(--theme-text-primary));
+    margin: 32px 0 0;
+  }
+
+  .bookmarks-subject-title-container {
+    /* margin-bottom: 32px; */
+    display: flex;
+  }
+
+  .bookmarks-subject-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+    color: rgba(var(--theme-text-primary));
+    flex-grow: 1;
+    margin: 32px 0;
+  }
+
+  .expand-btn {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.25px;
+    color: rgba(var(--theme-text-secondary));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .visible-on-small {
+    display: none;
+  }
+
+  .bookmarks-content-container {
+    width: 1156px;
+    /* display: flex; */
+    column-gap: 20px;
+    row-gap: 20px;
+    padding-bottom: 20px;
+  }
+
+  .bookmarks-subject-course-items {
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(274px, 25%));
+    row-gap: 32px;
+    margin-bottom: 16px;
+  }
+
+  .bookmarks-subject-others-items {
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(371px, 32.17%));
+    column-gap: 20px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .bookmarksHistory-main {
+    min-height: 95vh;
+    display: flex;
+    justify-content: center;
+  }
+
+  .bookmarksHistory-main-container {
+    width: 100%;
+    margin: 0 16px;
+  }
+
+  .bookmarks-title {
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: 0.18px;
+    color: rgba(var(--theme-text-primary));
+    margin: 32px 0;
+  }
+
+  .bookmarks-subject-title-container {
+    margin-top: 32px;
+    margin-bottom: 32px;
+    display: flex;
+  }
+
+  .bookmarks-subject-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+    color: rgba(var(--theme-text-primary));
+    flex-grow: 1;
+  }
+
+  .expand-btn {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.25px;
+    color: rgba(var(--theme-text-secondary));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .visible-on-small {
+    display: none;
+  }
+
+  .bookmarks-content-container {
+    display: grid;
+    /* grid-template-columns: 274px 274px; */
+    padding-bottom: 20px;
+  }
+
+  .bookmarks-subject-course-items {
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(274px, 33.33%));
+    column-gap: 20px;
+    row-gap: 32px;
+    margin-bottom: 16px;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .bookmarksHistory-main {
+    min-height: 95vh;
+    display: flex;
+    justify-content: center;
+  }
+
+  .bookmarks-title {
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: 0.18px;
+    color: rgba(var(--theme-text-primary));
+    margin: 32px 0;
+  } 
+
+  .bookmarks-subject-title-container {
+    margin-bottom: 32px;
+    display: flex;
+  }
+
+  .bookmarks-subject-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+    color: rgba(var(--theme-text-primary));
+    flex-grow: 1;
+    margin-top: 16px;
+  }
+
+  .expand-btn {
+    display: none;
+  }
+
+  .visible-on-small {
+    display: block;
+  }
+
+  .hide-on-small {
+    display: none;
+  }
+
+  .bookmarks-content-container {
+    display: grid;
+    grid-gap: 20px;
+  }
+
+  .bookmarks-subject-course-items{
+    row-gap: 0;
+    grid-row-gap: 0;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+
+
+  .bookmarksHistory-main {
+    min-height: 95vh;
+    display: block;
+    justify-content: center;
+  }
+
+  .bookmarksHistory-main-container {
+    width: 100%;
+    margin: 0 0 0 16px;
+  }
+
+  .bookmarks-title {
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: 0.18px;
+    color: rgba(var(--theme-text-primary));
+    margin: 32px 0;
+  }
+
+  .bookmarks-subject-title-container {
+    margin-bottom: 32px;
+    display: flex;
+  }
+
+  .bookmarks-subject-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+    color: rgba(var(--theme-text-primary));
+    flex-grow: 1;
+  }
+
+  .expand-btn {
+    display: none;
+  }
+
+  .visible-on-small {
+    display: block;
+  }
+
+  .hide-on-small {
+    display: none;
+  }
+
+  .bookmarks-content-container {
+    display: grid;
+    grid-template-columns: 360px;
+    grid-gap: 20px;
+  }
+
+  .bookmarks-subject-course-items{
+    row-gap: 0;
+    grid-row-gap: 0;
+  }
+}

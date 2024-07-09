@@ -1,0 +1,11 @@
+.lightGrey {
+  color: rgba(0, 0, 0, 0.38);
+  font-weight: 500;
+}
+.grey {
+  color: rgba(0, 0, 0, 0.6);
+  font-weight: 500;
+}
+.lightBlack {
+  color: rgba(0, 0, 0, 0.87);
+}

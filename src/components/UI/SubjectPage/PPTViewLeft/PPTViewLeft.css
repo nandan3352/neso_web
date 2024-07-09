@@ -1,0 +1,31 @@
+.ppt-view-left {
+    width: 37.08vw; 
+    height: 100vh;
+    border-right: 1px solid rgba(var(--theme-divider)); 
+    padding-top: 80px;
+}
+
+.ppts-names {
+    margin: 0 0 0 9.93vw; 
+}
+
+.ppt-title {
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.ppt-title p {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+    color: rgba(var(--theme-text-secondary));
+}
+
+.ppt-view-arrow {
+    opacity: 1;
+    pointer-events: none;
+    margin-right: 3.19vw;
+    transition: opacity 0.2s ease-in-out;
+}

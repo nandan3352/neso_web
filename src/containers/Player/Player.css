@@ -1,0 +1,147 @@
+@media only screen and (min-width: 1200px) {
+    .Player {
+        /*background-color: #ECECED;*/
+        width: 100%;
+    }
+
+    .Vertical-Line {
+        flex-grow: 0;
+        border-right: 1px solid rgba(var(--theme-divider));
+    }
+
+    .main {
+        width: 100%;
+    }
+
+    .sections {
+        display: flex;
+        flex-direction: row;
+        gap: 1px;
+        justify-content: center;
+    }
+
+    .Suggestions {
+        margin-bottom: 65px;
+        padding: 16px 0px;
+        width: 1200px;
+    }
+
+    .wrapper{
+        border-top: 1px solid rgba(var(--theme-divider));
+        display: flex;
+        justify-content: center;
+    }
+
+    .Sug-Title {
+        padding-top: 48px;
+        padding-bottom: 32px;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: 0.15px;
+        color: rgba(var(--theme-text-primary));
+    }
+
+    .Sug-List {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        grid-column-gap: 10px;
+    }
+
+    .Sug-List>ThumbnailHome {
+        flex: 1 1 auto;
+        text-align: center;
+
+        margin: 5px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .Player {
+        /*background-color: #ECECED;*/
+    }
+
+    .Container {
+        padding: 0;
+    }
+
+    .Right-Section {
+        width: 100%;
+    }
+
+    .Vertical-Line {
+        display: none;
+    }
+
+    .main {
+        display: flex;
+    }
+
+    .Suggestions {
+        display: none;
+    }
+
+    .Sug-Title {
+        padding-top: 48px;
+        padding-bottom: 32px;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: 0.15px;
+        color: rgba(var(--theme-text-primary));
+    }
+
+    .Sug-List {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    .Sug-Item {
+        margin: 20px;
+    }
+}
+
+@media only screen and (max-width: 468px) {
+    .Player {
+        /*background-color: #ECECED;*/
+    }
+
+    .Container {
+        padding: 0;
+    }
+
+    .Right-Section {
+        width: 100%;
+    }
+
+    .Vertical-Line {
+        display: none;
+    }
+
+    .main {
+        display: block;
+    }
+
+    .Suggestions {
+        display: none;
+    }
+
+    .Sug-Title {
+        padding-top: 48px;
+        padding-bottom: 32px;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: 0.15px;
+        color: rgba(var(--theme-text-primary));
+    }
+
+    .Sug-List {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    .Sug-Item {
+        margin: 20px;
+    }
+}

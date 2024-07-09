@@ -1,0 +1,131 @@
+.NavBar-primary {
+  color: rgba(var(--theme-text-secondary));
+  box-shadow: none;
+  border-bottom: 1px solid rgba(var(--theme-divider));
+  height: 60px;
+  margin: 0;
+}
+
+.Header-Container {
+  padding: 0 55px 0 71px;
+}
+
+#open.header-search-container {
+  width: 100%;
+}
+
+.header-search-container {
+  transition: width 0.3s ease-out;
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+  flex-grow: 1;
+  flex-direction: row-reverse;
+}
+
+.header-input-bar {
+  max-width: 360px;
+  z-index: 5;
+  background: var(--theme-background-surface);
+  position: absolute;
+  overflow: hidden;
+  width: 0%;
+  transition: width 0.3s ease-out;
+}
+
+#open.header-input-bar {
+  width: 100%;
+  overflow: unset;
+}
+
+.header-search-bar {
+  display: flex;
+  box-sizing: border-box;
+  height: 36px;
+  background-color: rgba(var(--theme-surface-main));
+  padding: 6px 12px;
+  position: relative;
+  border-radius: 4px;
+}
+
+.header-search-bar input {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border: none;
+  font-size: 16px;
+  color: rgba(var(--theme-text-primary));
+  padding-left: 8px;
+  padding-right: 8px;}
+
+.header-search-bar input:focus {
+  outline: none;
+}
+
+.header-search-bar img:nth-child(2) {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.header-search-bar-close {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.header-suggestions {
+  max-width: 100%;
+  position: fixed;
+  right: 0;
+  left: 0;
+  border-bottom: 1px solid rgba(var(--theme-divider));
+  border-top: none;
+  top: 56px;
+  background: var(--theme-background-surface);
+  border-radius: 0 0 4px 4px;
+}
+
+.suggestion-item {
+  height: 24px;
+  margin: 8px 0;
+  display: flex;
+  align-items: center;
+}
+
+.suggestion-item svg {
+  margin: 0 10.93px 0 13.5px;
+}
+
+.suggestion-item span {
+  font-size: 16px;
+  color: rgba(var(--theme-text-primary));
+  letter-spacing: 0.15px;
+}
+
+@media screen and (max-width: 480px) {
+  .header-input-bar {
+    max-width: none;
+    position: absolute;
+    align-items: center;
+    z-index: 1200;
+    background: var(--theme-background-surface);
+    border-bottom: 1px solid rgba(var(--theme-divider));
+    display: flex;
+    flex-grow: 1;
+    height: 55px;
+    width: 100%;
+  }
+  .header-search-bar {
+    width: 100%;
+  }
+  .header-search-container {
+    position: absolute;
+    height: calc(100% - 1px);
+    width: 0%;
+  }
+  .header-suggestions {}
+}

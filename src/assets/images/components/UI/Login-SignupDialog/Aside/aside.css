@@ -1,0 +1,92 @@
+.asideContainer {
+  min-width: 350px;
+  width: 440px;
+  max-width: 440px;
+  box-sizing: border-box;
+  background: #017374;
+  padding: 52px 64px;
+}
+
+.aside {
+  height: 100%;
+  width: 100%;
+}
+
+.asideHeader {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 1.25px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.74);
+}
+
+.descriptionContainer {
+  height: inherit;
+  display: flex;
+  align-items: center;
+}
+
+.greet {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: 0.18px;
+  color: #ffffff;
+  margin-bottom: 16px;
+}
+
+.description {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+  color: rgba(255, 255, 255, 0.74);
+}
+
+@media screen and (max-width: 1279px) {
+  .asideContainer {
+    height: 279px;
+    width: 100%;
+    max-width: 100vw;
+    padding: 52px 24px;
+    min-width: 260px;
+  }
+
+  .aside {
+    margin: auto;
+    max-width: 390px;
+  }
+
+  header {
+    top: 48px;
+    left: 183px;
+  }
+
+  .greet {
+    top: 106px;
+    left: 183px;
+  }
+
+  .description {
+    top: 186px;
+    left: 183px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .greet {
+    margin-bottom: 30px;
+  }
+
+  .descriptionContainer > div {
+    position: relative;
+    bottom: 45px;
+  }
+}

@@ -1,0 +1,115 @@
+.content-wrapper {
+  display: flex;
+  align-items: center;
+  z-index: 1;
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+
+@media only screen and (min-width: 1200px) {
+  .faculty-hide-only-in-large {
+    display: none;
+  }
+  .faculty-title {
+    margin-bottom: 32px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+    color: rgba(var(--theme-text-primary));
+  }
+  .content-wrapper {
+    display: flex;
+    align-items: center;
+    z-index: 1;
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+  }
+  .content-wrapper::-webkit-scrollbar {
+    display: none;
+  }
+  .content-wrapper div {
+    padding: 4px;
+    color: white;
+  }
+  .magic-wrapper {
+    height: 35px;
+    overflow-y: hidden;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .faculty-only-in-large {
+    display: none;
+  }
+  .faculty-title {
+    margin-bottom: 32px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+    color: rgba(var(--theme-text-primary));
+  }
+  .content-wrapper {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+  }
+  .content-wrapper div {
+    padding: 3px 5px 3px 5px;
+    color: white;
+  }
+  .magic-wrapper {
+    height: 35px;
+    overflow-y: hidden;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .faculty-only-in-large {
+    display: none;
+  }
+  .faculty-title {
+    margin-bottom: 32px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+    color: rgba(var(--theme-text-primary));
+  }
+  .content-wrapper {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  .content-wrapper div {
+    padding: 0 7px 0 7px;
+    color: white;
+  }
+  .magic-wrapper {
+    height: 35px;
+    overflow-y: hidden;
+    width: 100%;
+  }
+
+  .content-wrapper::-webkit-scrollbar{
+    display: none;
+  }
+
+}

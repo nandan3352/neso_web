@@ -1,0 +1,80 @@
+
+
+:root {
+  --theme-primary-main : #BF232Dff;/* primary */
+  --theme-secondary-main : #018786ff;/* secondary */
+
+  --theme-background-default: 255,255,255,1; /* background default */
+  --theme-background-paper : 255,255,255,1 ;/* background paper */
+  --theme-background-surface : rgba(255,255,255,1);
+
+  --theme-surface: #F8F9FB;
+  --theme-contrast-color : #000000;
+
+  --theme-text-primary: 0,0,0,0.87 ; /* text primary rgba(255,255,255,0.87) */
+  --theme-text-secondary: 0,0,0,0.6;/* text secondary rgba(255,255,255,0.6) */
+  --theme-text-disabled: 0,0,0,0.38 ;/* text disabled rgba(255,255,255,0.38) */
+  --theme-text-button-filled : 255,255,255,1;
+  --theme-container-background : #f8f9fbff; /* custom color */
+  --theme-divider: 0,0,0,0.12; /* divider */
+  --theme-background-paid-chapter : rgba(248, 249, 251, 1);
+  --theme-surface-main : 33,33,33,0.08;
+  --theme-cw-gradient : #FFFFFF;
+  --theme-cw-gradient-rgba : 255,255,255,0;
+  --theme-overlay-border : 0,0,0,0.12;
+
+  /*scrollbar*/
+  /*background same as default background*/
+  --theme-scrollbar-thumb: #dbdbdb;
+
+  /* syntax-highlighting */
+  --syntax-keyword: #AA0D91;
+  --syntax-string: #C41A16;
+  --syntax-comment: #007400;
+
+  /* Others */
+  --theme-tag-background: rgba(242, 153, 74, 0.16);
+
+  /*defaults*/
+  background-color:  rgba(var(--theme-background-default));
+}
+  
+ [dark-theme="dark"] {
+    --theme-primary-main : #D18A8Eff;/* primary */
+    --theme-secondary-main : #03DAC5ff;/* secondary */
+
+    --theme-background-default: 18,18,18,1; /* background default */
+    --theme-background-paper : 18,18,18,1 ;/* background paper */
+    --theme-background-surface : linear-gradient(0deg, rgba(255, 255, 255, 0.09), rgba(255, 255, 255, 0.09)), #121212;
+
+    --theme-surface: #1E1E1E;
+    --theme-contrast-color : #FFFFFF;
+
+
+    --theme-text-primary: 255,255,255,0.87 ; /* text primary rgba(255,255,255,0.87) */
+    --theme-text-secondary: 255,255,255,0.6;/* text secondary rgba(255,255,255,0.6) */
+    --theme-text-disabled: 255,255,255,0.38 ;/* text disabled rgba(255,255,255,0.38) */
+    --theme-text-button-filled : 0,0,0,1;
+
+    --theme-container-background : #000000; /* custom color */
+    --theme-divider: 255,255,255,0.12; /* divider */
+    --theme-surface-main : 255,255,255,0.12;
+    /* --theme-background-paid-chapter : linear-gradient(0deg, rgba(255, 255, 255, 0.09), rgba(255, 255, 255, 0.09)), #121212; */
+    --theme-background-paid-chapter: rgba(255, 255, 255, 0.05);
+    --theme-cw-gradient : #1B1B1B;
+    --theme-cw-gradient-rgba : 0,0,0,0;
+    --theme-overlay-border : 255, 255, 255, 0.12;
+
+    --theme-scrollbar-thumb: #3a3a3a;
+
+    /* syntax-highlighting */
+    --syntax-keyword: #FF9EF0;
+    --syntax-string: #FF9390;
+    --syntax-comment: #89FF89;
+
+    /* Others */
+    --theme-tag-background: rgba(255, 144, 137, 0.31);
+    
+    /*defaults*/
+    background-color:  rgba(var(--theme-background-default));
+  }

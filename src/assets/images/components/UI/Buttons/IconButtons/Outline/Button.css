@@ -1,0 +1,19 @@
+.Icon-outline {
+    width: 56px;
+    height: 36px;
+    border: 1px solid rgba(var(--theme-divider));
+    box-sizing: border-box;
+    border-radius: 4px;
+    color: var(--theme-secondary-main);
+    margin: 10px;
+}
+
+.Icon-outline:hover {
+    width: 56px;
+    height: 36px;
+    border: 1px solid var(--theme-secondary-main);
+    box-sizing: border-box;
+    border-radius: 4px;
+    color: var(--theme-secondary-main);
+    background: rgba(1, 135, 134, 0.07);
+}

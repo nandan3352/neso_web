@@ -1,0 +1,146 @@
+.MuiDialog-paperScrollPaper {
+  border-radius: 0px;
+}
+
+
+
+/* body::-webkit-scrollbar {
+  width: 10px;
+} */
+
+/* Track */
+
+/* body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 5px;
+} */
+
+/* Handle */
+
+/* body::-webkit-scrollbar-thumb {
+  background: grey;
+  border-radius: 5px;
+} */
+
+/* Handle on hover */
+
+/* body::-webkit-scrollbar-thumb:hover {
+  background: lightgray;
+} */
+
+.container {
+  /*box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.14), 0px 1px 10px rgba(0, 0, 0, 0.12), 0px 2px 4px rgba(0, 0, 0, 0.2);*/
+  /* margin-left: clamp(0px, 16px, 5%);
+    margin-right : clamp(0px, 6px, 5%); */
+  position: relative;
+  padding-top: 1px;
+  margin-top: -1px;
+  z-index: 5;
+  background-color: rgba(var(--theme-background-default));
+}
+
+#close.container {
+  margin-top: 0px;
+}
+
+#open.container {
+  margin-top: 342px;
+}
+
+.root {
+  padding-top: 1px;
+  margin-top: -1px;
+  position: relative;
+}
+
+.latest-section {
+  transition: max-height 300ms ease-in;
+  background-color: var(--theme-container-background);
+  width: 100%;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  max-height: 0px;
+}
+
+#open.latest-section {
+  max-height: 700px;
+}
+
+/* * {
+  -moz-user-select: text;
+  -khtml-user-select: text;
+  -webkit-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
+} */
+
+@media only screen and (min-width: 1200px) {
+  .LeavesAd-Home {
+    background-color: lightgray;
+    width: 768px;
+    height: 90px;
+    margin: 32px auto 48px auto;
+  }
+  /* .container {
+        margin-left: clamp(0px, 126px, 5%);
+        margin-right : clamp(0px, 116px, 5%);
+    } */
+  .home-main {
+    display: flex;
+    justify-content: stretch;
+  }
+  /*.faculty-home {*/
+  /*    display: flex;*/
+  /*    justify-content: center;*/
+  /*}*/
+  .Courses {
+    margin-top: 32px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .LeavesAd-Home {
+    background-color: lightgray;
+    width: 468px;
+    height: 60px;
+    margin: 32px auto;
+  }
+  /*  .container{
+        margin-left: clamp(0px, 16px, 5%);
+        margin-right : clamp(0px, 6px, 5%);
+    }
+ */
+  /*.Courses {*/
+  /*  margin-top: 60px;*/
+  /*}*/
+}
+
+@media only screen and (max-width: 468px) {
+  .LeavesAd-Home {
+    background-color: lightgray;
+    width: 300px;
+    height: 50px;
+    margin: 32px auto;
+  }
+  #open.container {
+    margin-top: 290px;
+  }
+  /* .MuiContainer-root {
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+  } */
+  /*
+  .container {
+      margin: 0;
+  } */
+  .Courses {
+    margin-top: 24px;
+
+  }
+}

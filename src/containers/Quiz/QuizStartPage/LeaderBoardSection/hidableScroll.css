@@ -1,0 +1,18 @@
+@media (hover: hover) {
+    .scroll-hide {
+        mask-image: linear-gradient(to top, transparent, black),
+            linear-gradient(to left, transparent 10px, rgb(238, 92, 92) 30px);
+        mask-size: 100% 20000px;
+        mask-position: left bottom;
+        -webkit-mask-image: linear-gradient(to top, transparent, black),
+            linear-gradient(to left, transparent 10px, black 30px);
+        -webkit-mask-size: 100% 20000px;
+        -webkit-mask-position: left bottom;
+        transition: mask-position 0.3s, -webkit-mask-position 0.3s;
+    }
+
+    .scroll-hide:hover {
+        -webkit-mask-position: left top;
+        mask-position: left top;
+    }
+}

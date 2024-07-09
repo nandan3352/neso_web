@@ -1,0 +1,197 @@
+@media only screen and (min-width: 1200px) {
+  .flex-container-nesofuel {
+    display: flex;
+    justify-content: stretch;
+  }
+
+  .nesoFuel {
+    border: 1px solid rgba(var(--theme-divider));
+    margin-bottom: 48px;
+    height: 359px;
+    width: 100%;
+  }
+
+  .art-container {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+
+  .left-art-container {
+    width: 411px;
+    margin: 48px auto 64px 82px;
+  }
+
+  .fuelImg {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 24px;
+  }
+
+  .nesoFuel-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+    color: rgba(var(--theme-text-primary));
+    margin-bottom: 20px;
+  }
+
+  .nesoFuel-description {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+    color: rgba(var(--theme-text-primary));
+    margin-bottom: 32px;
+  }
+
+  .right-art-container {
+    background-image: url("https://firebasestorage.googleapis.com/v0/b/neso-c53c4.appspot.com/o/ImageResource%2FWebsiteResource%2FNesoGetFuelSideImg.webp?alt=media&token=82adc469-e913-4b99-af53-ec4ef9d3990d");
+    background-size: 517px;
+    background-repeat: no-repeat;
+     height: 360px;
+    position: relative;
+    margin-right: -150px;
+    right: 150px;
+  }
+
+  .artImg {
+    float: right;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .flex-container-nesofuel {
+    display: flex;
+    justify-content: center;
+  }
+
+  .nesoFuel {
+    border: 1px solid rgba(var(--theme-divider));
+    margin-bottom: 48px;
+    height: 359px;
+    width: 100%;
+  }
+
+  .art-container {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+
+  .left-art-container {
+    width: 295px;
+    margin: 48px auto 64px 48px;
+  }
+
+  .fuelImg {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 24px;
+  }
+  /* 
+  .only-large {
+    display: none;
+  } */
+
+  .nesoFuel-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+    color: rgba(var(--theme-text-primary));
+    margin-bottom: 20px;
+  }
+
+  .nesoFuel-description {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+    color: rgba(var(--theme-text-primary));
+    margin-bottom: 32px;
+  }
+
+  .right-art-container {
+    background-image: url("http://rct.nesoacademy.org/assets/images/fuelBgImages/Art.webp");
+    background-size: 517px;
+    background-repeat: no-repeat;
+    position: relative;
+    right: 150px;
+    margin-right: -150px;
+    /* height: 360px; */
+    /* right: 100px; */
+  }
+
+  .artImg {
+    width: 400px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .flex-container-nesofuel {
+    justify-content: center;
+    width: 100%;
+    background-color: rgba(var(--theme-container-background));
+  }
+
+  .only-large {
+    display: none;
+  }
+
+  .nesoFuel {
+    border: none;
+    margin-bottom: 48px;
+    max-height: 328px;
+    max-width: 360px;
+  }
+
+  .art-container {
+    padding: 0px 12px;
+    display: grid;
+    grid-template-columns: 100%;
+    height: 100%;
+    background-color: rgba(var(--theme-container-background));
+  }
+
+  .left-art-container {
+    /* padding-left: 16px; */
+    width: 100%;
+    margin: auto auto auto 0px;
+  }
+
+  .left-art-container img {
+    width: 36px;
+  }
+
+  .fuelImg {
+    width: 36px;
+    height: 36px;
+    margin-bottom: 16px;
+  }
+
+  .nesoFuel-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+    color: rgba(var(--theme-text-primary));
+    margin-bottom: 12px;
+  }
+
+  .nesoFuel-description {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.25px;
+    color: rgba(var(--theme-text-secondary));
+    margin-bottom: 32px;
+  }
+
+  .right-art-container {
+    display: none;
+  }
+
+  .artImg {
+    width: 400px;
+  }
+}

@@ -1,0 +1,17 @@
+.search-page {
+    padding-top: 32px;
+    padding-left: 14.58vw;
+    overflow: hidden;
+}
+
+.search-heading {
+    font-size: 24px;
+    color: rgba(var(--theme-text-primary));
+    margin-bottom: 48px;
+}
+
+@media screen and (max-width: 768px) {
+    .search-page {
+        padding: 32px 4vw 0 4vw;
+    }
+}

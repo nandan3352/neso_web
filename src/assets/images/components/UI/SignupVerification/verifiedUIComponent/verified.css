@@ -1,0 +1,63 @@
+.verifiedContainer {
+  text-align: center;
+  min-width: 312px;
+}
+
+.verifiedHeading {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.verifiedSubHeading {
+  margin-top: 16px;
+  font-size: 16px;
+  color: rgba(var(--theme-text-secondary));
+}
+
+.verifiedDoneAll {
+  margin-top: 48px;
+  height: 72px;
+}
+
+.verifiedDoneAll .MuiSvgIcon-root {
+  height: 72px;
+  width: 72px;
+  color: #27ae60;
+}
+
+.verifiedNextButton {
+  margin-top: 72px;
+}
+
+.verifiedNextButton .MuiButton-outlined {
+  padding: 10px 16px;
+}
+
+.verifiedNextButton .MuiButton-outlined .MuiButton-label {
+  line-height: 16px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 328px) {
+  .verifiedContainer {
+    width: 100%;
+    min-width: 250px;
+    max-width: 300px;
+  }
+}
+
+@media screen and (max-width: 468px) {
+  .verifiedContainer {
+    min-height: 262px;
+  }
+
+  .verifiedDoneAll {
+    margin-top: 32px;
+  }
+
+  .verifiedNextButton {
+    margin-top: 32px;
+  }
+}

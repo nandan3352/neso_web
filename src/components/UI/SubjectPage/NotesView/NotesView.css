@@ -1,0 +1,31 @@
+.notes-view-section {
+    width: 100%;
+    display: flex;
+    overflow-x: hidden;
+    position: relative;
+}
+
+.notes-view-left-section {
+    position: fixed;
+    top: 64px;
+    bottom: 0;
+    left: 0;
+}
+
+.notes-view-right-section {
+    position: relative;
+    left: 37.08vw;
+    border-left: 1px solid rgba(var(--theme-divider)); 
+}
+
+@media screen and (max-width: 1000px) {
+    .notes-view-left-section {
+        display: none;
+    }
+
+    .notes-view-right-section {
+        width: 100%;
+        border-left: none;
+        left: 0;
+    }
+}

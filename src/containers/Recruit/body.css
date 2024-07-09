@@ -1,0 +1,37 @@
+.recruitModal {
+  margin: 56px 5%;
+}
+.recruitModalTitle {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  /* identical to box height, or 120% */
+
+  /* text-align: center; */
+  letter-spacing: 0.15px;
+
+  /* 00. On Surface / High Emphasis */
+
+  color: rgba(var(--theme-text-primary));
+}
+.recruitModalPara {
+  display: flex;
+  align-items: flex-start;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+  margin-top: 16px;
+  letter-spacing: 0.15px;
+
+  /* 00. On Surface / Medium Emphasis */
+
+  color: rgba(var(--theme-text-secondary));
+}
+
+.recruitModalBtn {
+  margin: 30px;
+  /* width: 100%; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

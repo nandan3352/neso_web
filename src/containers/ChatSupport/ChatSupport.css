@@ -1,0 +1,30 @@
+#rootSupport{
+    height:calc(100vh - 60px)
+
+}
+/* #rootSupport  .MuiPaper-rounded{
+    border-radius: 16px;
+} */
+
+#innerRect{
+    min-width:320px;
+    width:44vw;
+    height:calc(100% - 8vh);
+    margin:3.2vh auto 4.8vh auto;
+    border-radius:0;
+    
+}
+
+@media only screen and (max-width:768px){
+    #innerRect{
+        width:80vw;
+    }
+}
+
+.MuiTypography-h6{
+    line-height: 24px;
+}
+
+
+
+

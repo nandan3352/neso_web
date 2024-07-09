@@ -1,0 +1,55 @@
+@media all {
+    .page-break {
+        display: none;
+    }
+}
+
+.invoice-root{
+    visibility: hidden;
+    position: fixed;
+}
+
+@media print {
+
+    html,
+    body {
+        height: initial !important;
+        overflow: initial !important;
+        -webkit-print-color-adjust: exact;
+    }
+
+    .with-border {
+        border: 1px solid rgba(var(--theme-divider))
+    }
+}
+
+@media print {
+
+    p{
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+    }
+    .no-print {
+        visibility: hidden;
+    }
+
+    .gray{
+        color: #707070;
+    }
+
+    .invoice-root{
+        visibility: visible;
+        position: relative;
+    }
+
+    .page-break {
+        margin-top: 1rem;
+        display: block;
+        page-break-before: auto;
+    }
+}
+
+@page {
+    size: auto;
+    margin: 24mm;
+}

@@ -1,0 +1,208 @@
+
+@media only screen and (min-width: 1199px) {
+    .qnn-main-md {
+        display: none;
+    }
+
+    .qnn-title-row-md {
+        display: flex;
+        padding: 16px 20px 16px 18px;
+    }
+
+    .qnn-title-md {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: 0.15px;
+        color: rgba(var(--theme-text-primary));
+    }
+
+    .qnn-title-grow-md {
+        flex-grow: 1;
+    }
+
+    .qnn-lower-section-md {
+        padding: 8px 8px 0 8px;
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    .qnn-content-border-md {
+        display: flex;
+        width: 100%;
+        height: 72px;
+        cursor: pointer;
+    }
+
+    .qnn-content-border-md:hover {
+        background-color: rgba(var(--theme-surface-main));
+        border-radius: 4px;
+    }
+
+    .qnn-img-md {
+        padding: 12px 0 12px 14px;
+    }
+
+    .qnn-content-inside-md {
+        padding: 15px 0 0 22px;
+    }
+
+    .qnn-content-title-md {
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.15px;
+        color: rgba(var(--theme-text-primary));
+    }
+
+    .qnn-content-pg-no-md {
+        padding-top: 2px;
+        font-size: 12px;
+        line-height: 16px;
+        letter-spacing: 0.4px;
+        color: rgba(var(--theme-text-secondary));
+    }
+
+    .qnn-content-arrow-md {
+        padding: 24px 8px 0 0;
+    }
+}
+
+@media only screen and (max-width: 1199px) {
+    .qnn-main-md {
+        display: block;
+        width: 100%;
+        height: 360px;
+        padding-bottom: 32px;
+        border-bottom: 1px solid  rgba(var(--theme-divider));
+    }
+
+    .qnn-title-row-md {
+        display: flex;
+        padding: 16px 20px 16px 18px;
+    }
+
+    .qnn-title-md {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: 0.15px;
+        color: rgba(var(--theme-text-primary));
+    }
+
+    .qnn-title-grow-md {
+        flex-grow: 1;
+    }
+
+    .qnn-lower-section-md {
+        padding: 8px 8px 0 8px;
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    .qnn-content-border-md {
+        display: flex;
+        width: 100%;
+        height: 72px;
+        cursor: pointer;
+    }
+
+    .qnn-content-border-md:hover {
+        background-color: rgba(var(--theme-surface-main));
+        border-radius: 4px;
+    }
+
+    .qnn-img-md {
+        padding: 12px 0 12px 14px;
+    }
+
+    .qnn-content-inside-md {
+        padding: 15px 0 0 22px;
+    }
+
+    .qnn-content-title-md {
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.15px;
+        color: rgba(var(--theme-text-primary));
+    }
+
+    .qnn-content-pg-no-md {
+        padding-top: 2px;
+        font-size: 12px;
+        line-height: 16px;
+        letter-spacing: 0.4px;
+        color: rgba(var(--theme-text-secondary));
+    }
+
+    .qnn-content-arrow-md {
+        padding: 24px 8px 0 0;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .qnn-main-md {
+        display: none;
+    }
+
+    .qnn-title-row-md {
+        display: flex;
+        padding: 16px 20px 16px 18px;
+    }
+
+    .qnn-title-md {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: 0.15px;
+        color: rgba(var(--theme-text-primary));
+    }
+
+    .qnn-title-grow-md {
+        flex-grow: 1;
+    }
+
+    .qnn-lower-section-md {
+        padding: 8px 8px 0 8px;
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    .qnn-content-border-md {
+        display: flex;
+        width: 100%;
+        height: 72px;
+        cursor: pointer;
+    }
+
+    .qnn-content-border-md:hover {
+        background-color: rgba(var(--theme-surface-main));
+        border-radius: 4px;
+    }
+
+    .qnn-img-md {
+        padding: 12px 0 12px 14px;
+    }
+
+    .qnn-content-inside-md {
+        padding: 15px 0 0 22px;
+    }
+
+    .qnn-content-title-md {
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.15px;
+        color: rgba(var(--theme-text-primary));
+    }
+
+    .qnn-content-pg-no-md {
+        padding-top: 2px;
+        font-size: 12px;
+        line-height: 16px;
+        letter-spacing: 0.4px;
+        color: rgba(var(--theme-text-secondary));
+    }
+
+    .qnn-content-arrow-md {
+        padding: 24px 8px 0 0;
+    }
+}

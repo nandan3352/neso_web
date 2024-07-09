@@ -1,0 +1,30 @@
+.Primary-outline1 {
+    width: 93px;
+    height: 36px;
+    border: 1px solid var(--theme-primary-main) !important;
+    box-sizing: border-box;
+    border-radius: 4px !important;
+    background: transparent;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: var(--theme-primary-main) !important;
+    margin: 10px;
+}
+
+/*.MuiButtonBase-root {*/
+/*    color: #BF232D;*/
+/*}*/
+
+.Primary-outline1:hover {
+    width: 93px;
+    height: 36px;
+    border: 1px solid var(--theme-primary-main);
+    box-sizing: border-box;
+    border-radius: 4px;
+    background: rgba(191, 35, 45, 0.07);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: var(--theme-primary-main);
+}

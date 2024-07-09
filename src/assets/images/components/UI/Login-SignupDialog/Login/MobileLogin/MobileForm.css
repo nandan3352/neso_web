@@ -1,0 +1,25 @@
+.subHeading {
+  font-size: 16px;
+  color: #666666;
+  font-weight: 400;
+}
+
+.countryCodeSelect .MuiInput-underline:after {
+  border-bottom: 0px !important;
+}
+
+#recaptcha {
+  display: flex;
+  justify-content: center;
+}
+
+#recaptcha > div {
+  width: 390px;
+}
+
+.otpWrapper {
+  height: 86vh;
+  width: 504px;
+  display: flex;
+  flex-direction: column;
+}

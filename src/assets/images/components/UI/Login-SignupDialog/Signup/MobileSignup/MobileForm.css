@@ -1,0 +1,15 @@
+.subHeading {
+  margin-top: 8px;
+  font-size: 16px;
+  color: #666666;
+  font-weight: 400;
+}
+
+#recaptcha {
+  display: flex;
+  justify-content: center;
+}
+
+#recaptcha > div {
+  width: 390px;
+}

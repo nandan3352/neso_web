@@ -1,0 +1,29 @@
+.Secondary-outline2 {
+  width: 93px;
+  height: 36px;
+  border: 1px solid rgba(var(--theme-divider)) !important;
+  box-sizing: border-box;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 1.25px;
+  text-transform: uppercase;
+  color: var(--theme-secondary-main) !important;
+  margin: 10px;
+}
+
+.Secondary-outline2:hover {
+  width: 93px;
+  height: 36px;
+  border: 1px solid var(--theme-secondary-main);
+  box-sizing: border-box;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 1.25px;
+  text-transform: uppercase;
+  background-color: rgba(1, 135, 134, 0.07);
+  color: var(--theme-secondary-main);
+}

@@ -1,0 +1,129 @@
+.content-section {
+  margin-bottom: 24px;
+}
+.content-not-hidden-section > span {
+  color: rgba(var(--theme-text-primary));
+}
+.content-not-hidden-section {
+  display: flex;
+  align-items: center;
+}
+
+.content-not-hidden-section img {
+  margin-right: 8px;
+}
+
+.accordion-label {
+  cursor: pointer;
+  display: block;
+  user-select: none;
+}
+
+.accordion_container {
+  max-width: 720px;
+  margin: 0 auto;
+}
+.accordion_container:first-of-type {
+}
+.accordion_container:last-of-type {
+  border-bottom: none;
+}
+
+.accordion-content {
+  /* Height animation:
+  only really works well if the height is close to content - too high and the animation still goes to the max-height number, messing up the timing
+  For widely variable height content, best not to animate. switch display attribute instead */
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s;
+  background-size: 260px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.accordion-control {
+  display: none;
+}
+.accordion-control + label {
+  color: rgba(var(--theme-text-primary));
+  position: relative;
+  margin-left: 20px;
+  padding-left: 5px;
+  display: block;
+  font-size: 1em;
+  line-height: 1em;
+  z-index: 0;
+  margin-bottom: 20px;
+}
+.accordion-control + label:before,
+.accordion-control + label:after {
+  content: "";
+  position: absolute;
+}
+.accordion-control + label:before {
+  left: -19px;
+  top: 3px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-color: transparent transparent transparent
+    rgba(var(--theme-text-secondary));
+  transition: all 0.2s ease-in;
+}
+.accordion-control + label:after {
+  content: attr(data-label-closed);
+  padding-left: 4px;
+}
+.accordion-control:checked + label {
+  cursor: pointer;
+}
+.accordion-control:checked + label:before {
+  transform: rotate(90deg);
+}
+.accordion-control:checked + label:after {
+  content: attr(data-label-open);
+}
+.accordion-control:checked + label + .accordion-content {
+  max-height: 400px;
+  margin-bottom: 24px;
+  padding-left: 20px;
+}
+.accordion-control[type="radio"] + label:before,
+.accordion-control[type="radio"] + label:after {
+  content: "";
+  color: rgba(var(--theme-text-primary));
+}
+.accordion-control[type="radio"]:checked + label {
+  cursor: default;
+}
+.accordion-control[type="radio"]:checked + label:before {
+  border-left-color: rgba(var(--theme-text-secondary));
+}
+
+.content-1 {
+  background-image: url("https://blog.absolutedisaster.co.uk/profile/Dark-Mills-I.jpg");
+}
+
+.content-2 {
+  background-image: url("https://blog.absolutedisaster.co.uk/profile/Dark-Mills-II.jpg");
+}
+
+.content-3 {
+  background-image: url("https://blog.absolutedisaster.co.uk/profile/Torquemada.jpg");
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+}
+
+/*.MuiFormControlLabel-root {*/
+/*  cursor: pointer;*/
+/*  display: inline-flex;*/
+/*  align-items: center;*/
+/*  margin-left: 15px;*/
+/*  margin-right: 16px;*/
+/*  vertical-align: middle;*/
+/*  -webkit-tap-highlight-color: transparent;*/
+/*}*/

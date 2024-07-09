@@ -1,0 +1,70 @@
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+input:-webkit-autofill, input:autofill , input:autofill:hover, input:autofill:focus, input:autofill:active  {
+  -webkit-box-shadow: 0 0 0 100px #E8F0FE inset !important;
+  box-shadow: 0 0 0 100px #E8F0FE inset !important;
+  -webkit-text-fill-color: #000 !important;
+}
+
+input:-moz-a
+
+::-webkit-scrollbar {
+  background: rgba(var(--theme-background-default));
+  border-radius: 4px;
+  height: 8px;
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--theme-scrollbar-thumb);
+  border-radius: 4px;
+}
+
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sniglet&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+a {
+  text-decoration: none;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+/* Global style overrides */
+
+.MuiPaper-elevation4 {
+  box-shadow: none !important;
+}
+
+@media (min-width:600px) {
+  .MuiContainer-root {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+@media (min-width:1176px) {
+  .MuiContainer-root {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}

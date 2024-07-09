@@ -1,0 +1,8 @@
+@media only screen and (max-width: 960px) {
+  .aboutUs {
+    margin: 0;
+  }
+  #yo {
+    width: 120%;
+  }
+}

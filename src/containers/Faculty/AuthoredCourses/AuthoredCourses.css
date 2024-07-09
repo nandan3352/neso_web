@@ -1,0 +1,37 @@
+.authoredCoursesContainer {
+  display: grid;
+  grid-template-columns: 176px 176px 176px;
+  grid-column-gap: 20px;
+  grid-row-gap: 32px;
+}
+
+@media only screen and (max-width: 972px) {
+  .authoredCoursesContainer {
+    grid-template-columns: 176px 176px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .authoredCoursesContainer {
+    grid-template-columns: 161px 161px 161px 161px;
+  }
+}
+
+@media only screen and (max-width: 740px) {
+  .authoredCoursesContainer {
+    grid-template-columns: 161px 161px 161px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .authoredCoursesContainer {
+    margin-top: 16px !important;
+    overflow-x: scroll;
+    display: flex;
+    grid-column-gap: 16px;
+    scrollbar-width: none;
+  }
+  .authoredCoursesContainer::-webkit-scrollbar {
+    display: none;
+  }
+}

@@ -1,0 +1,65 @@
+.SetupProfileContainer {
+ /*  height: 433px; */
+}
+
+.SPHeading {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: center;
+}
+
+.SPSubHeading {
+  margin-top: 8px;
+  font-size: 16px;
+  color: rgba(var(--theme-text-secondary));
+  text-align: center;
+}
+
+.cameraContainer {
+  margin: auto;
+  margin-top: 48px;
+  position: relative;
+  height: 114px;
+  width: 114px !important;
+  border-radius: 100%;
+  border: 1px solid rgba(var(--theme-divider));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cameraContainer:hover {
+  cursor: pointer;
+}
+
+.setupProfileButton > button {
+  width: fit-content !important;
+}
+
+.profileImage {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 114px;
+  width: 114px;
+}
+
+.profileImage > img {
+  height: 100%;
+  width: 100%;
+  border-radius: 100%;
+}
+
+.userName {
+  text-transform: capitalize;
+  margin-top: 51px;
+}
+
+@media screen and (max-width: 468px) {
+  .SetupProfileContainer {
+    padding: 0px 32px;
+  }
+}
+
+

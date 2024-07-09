@@ -1,0 +1,178 @@
+.right-header {
+    /* border-bottom: 1px solid rgba(var(--theme-divider)); */
+    position: relative;
+    z-index: 3;
+}
+
+#set-subject-header-fixed {
+    position: sticky;
+    transition: none;
+    top: 60px;
+    padding-top: 16px;
+    left: 36.5%;
+    right: 0;
+    z-index: 3;
+    background-color: rgb(var(--theme-background-default));
+}
+
+
+#set-subject-header-fixed .header-path {
+    display: none;
+}
+
+#set-subject-header-fixed .right-heading {
+    display: none;
+}
+
+#set-subject-header-fixed .right-heading {
+    margin-top: 24px;
+}
+
+.header-path {
+    width: auto;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    margin: 24px;
+    user-select: none;
+}
+
+.header-path > *:nth-child(odd) {
+    cursor: pointer;
+}
+
+.header-path span {
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+    color: rgba(var(--theme-text-primary));
+}
+
+#first-span {
+    color:rgba(var(--theme-text-secondary));
+} 
+
+#arrow-one {
+    margin: 0 8px 0 10px;
+}
+
+#arrow-two {
+    margin: 0 8px;
+}
+
+.right-heading {
+    width: 139px;
+    height: 24px;
+    margin: 0 24px 25px 24px;
+}
+
+.right-heading p {
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+    font-weight: 500;
+    color: rgba(var(--theme-text-primary));
+}
+
+.right-nav {
+    width: 325px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 0 16px 36px;
+    user-select: none;
+}
+
+.right-nav span {
+    font-size: 14px;
+    letter-spacing: 0.1px;
+    font-weight: 500;
+    line-height: 24px;
+    color: rgba(var(--theme-text-secondary));
+    cursor: pointer;
+}
+
+#chapters {
+    color:var(--theme-primary-main);
+}
+
+.red-bar {
+    width: 82px;
+    height: 2px;
+    background-color: var(--theme-primary-main);
+    position: absolute;
+    bottom: -1px;
+    transition: all 0.4s;
+}
+
+#chaptersSec {
+    left: 24px;
+}
+
+#quizzesSec {
+    left: 127px;
+}
+
+#pptsSec {
+    left: 234px;
+}
+
+#notesSec {
+    left: 317px;
+}
+
+@media screen and (max-width: 1000px) {
+
+    .right-header {
+        padding-top: 16px;
+    }
+
+    #right-section-header {
+        display: none;
+    }
+
+    .right-heading {
+        display: none;
+    }
+
+    #set-subject-header-fixed {
+        position: sticky;
+        top: 60px;
+        background-color: rgb(var(--theme-background-default));
+        border-left: none !important;
+    }
+
+}
+
+@media screen and (max-width: 630px) {
+    .right-nav {
+        justify-content: flex-start;
+        margin: 0 0 16px 28px;
+    }
+    
+    #quizzes {
+        margin-left: 32px;
+        margin-right: 32px;
+    }
+
+    #notes {
+        margin-left: 30px;
+    }
+
+    #chaptersSec {
+        left: 18px;
+    }
+    
+    #quizzesSec {
+        left: 104px;
+    }
+    
+    #pptsSec {
+        left: 191.5px;
+    }
+
+    #notesSec {
+        left: 257px;
+    }
+}

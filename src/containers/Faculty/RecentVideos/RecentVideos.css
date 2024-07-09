@@ -1,0 +1,23 @@
+.recentFacultyVideoContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 4px;
+  grid-row-gap: 26px;
+}
+
+@media only screen and (max-width: 768px) {
+  .recentFacultyVideoContainer {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .recentFacultyVideoContainer {
+    grid-template-columns: repeat(6, calc(100% / 1.3));
+    overflow-x: scroll;
+    scrollbar-width: none;
+  }
+  .recentFacultyVideoContainer::-webkit-scrollbar{
+    display: none;
+  }
+}

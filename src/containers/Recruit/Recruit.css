@@ -1,0 +1,115 @@
+.recruitTitleWrapper {
+  margin-top: 64px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.recruitTitle {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 34px;
+  line-height: 36px;
+  color: rgba(var(--theme-text-primary));
+  text-align: center;
+}
+.recruitSubTitle {
+  margin-top: 24px;
+
+  width: 648px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.15px;
+  color: rgba(var(--theme-text-secondary));
+}
+.recruitCard {
+  height: 176px;
+  width: 100%;
+  border: 1px solid rgba(var(--theme-divider));
+  box-sizing: border-box;
+  text-align: start;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.active{
+  border: 1px solid var(--theme-secondary-main);
+  transition: transform 300ms ease;
+}
+
+.active:hover{
+  transform: scale(1.025);
+}
+
+.recruitCardsWrapper {
+  /* width: 65%; */
+  margin: 88px 0 79px;
+}
+/* .DisabledRecruitCard {
+  cursor: default;
+} */
+/* .disabledRecruitContent {
+  color: theme.palette.text.disabled !important;
+} */
+.recruitContent {
+  /* margin-top: 32px; */
+  margin-left: 32px;
+}
+.recruitContentTitle {
+  margin-top: 16px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.15px;
+  color: rgba(var(--theme-text-primary));
+}
+.recruitContentBody {
+  width: 174px;
+  margin-top: 8px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.25px;
+  color: rgba(var(--theme-text-secondary));
+}
+@media only screen and (max-width: 768px) {
+  .recruitSubTitle {
+    width: 62%;
+  }
+  .recruitCardsWrapper {
+    width: 90%;
+    margin: 48px 5% 63px;
+  }
+}
+@media only screen and (max-width: 468px) {
+  .recruitTitleWrapper {
+    margin-top: 32px;
+  }
+  .recruitCardsWrapper {
+    margin-bottom: 25px !important;
+  }
+  .recruitSubTitle {
+    width: 90%;
+  }
+  .recruitTitle {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    /* identical to box height, or 120% */
+
+    letter-spacing: 0.15px;
+  }
+  .recruitSubTitle {
+    font-size: 14px;
+    line-height: 20px;
+    /* or 143% */
+
+    text-align: center;
+    letter-spacing: 0.25px;
+  }
+}

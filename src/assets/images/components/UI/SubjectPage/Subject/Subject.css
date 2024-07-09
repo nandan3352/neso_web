@@ -1,0 +1,60 @@
+.right-subject {
+    position: relative;
+}
+
+.subject-content {
+    position: relative;
+
+}
+
+
+.header-path a button{
+    margin: 0 -12px;
+}
+
+/* #first-span{
+    cursor: default;
+} */
+
+#static-section-header-fixed {
+    width: 100%;
+    height: 174px;
+}
+
+@media screen and (max-width: 1000px) {
+    #static-section-header-fixed {
+        display: none;
+    }
+}
+
+.tabs{
+    position: relative;
+    z-index: 1;
+}
+
+@media (min-width: 600px) {
+    .MuiAppBar-positionSticky {
+        width: 150%;
+        top: 58px !important;
+        left: auto;
+        right: 0;
+        position: sticky;
+    }
+}
+
+@media (max-width: 600px) {
+    .MuiAppBar-positionSticky {
+        top: 56px !important;
+        overflow-x: hidden;
+    }
+    
+    .MuiTabs-scroller{
+        overflow: scroll !important;
+        overflow-y: hidden !important;
+        scrollbar-width: none !important;
+    }
+
+    .MuiTabs-scroller::-webkit-scrollbar{
+        display: none;
+    }
+} 

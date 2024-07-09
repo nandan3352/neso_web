@@ -1,0 +1,86 @@
+.timelineContainer {
+  margin: auto;
+  width: fit-content;
+  padding: 30px 0px;
+}
+
+.timelineContainer > div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.indicator {
+  margin: auto;
+  height: 56px;
+  width: 56px;
+  font-size: 34px;
+  line-height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+}
+
+
+.green {
+  background: #dcf2e6;
+  color: #27ae60;
+}
+
+.grey {
+  background: #ededed;
+  color: rgba(0, 0, 0, 0.38);
+}
+
+.paymentTimeLineTextContainer {
+  width: 94%;
+  margin-left: -2px;
+}
+
+.verificationTimeLineTextContainer {
+  width: 115%;
+  margin-left: -10px;
+}
+
+.subText {
+  margin-top: 10px;
+  letter-spacing: 0.15px;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(var(--theme-text-secondary));
+  text-align: center;
+}
+
+.indicator .MuiSvgIcon-root {
+  font-size: 35px;
+}
+
+@media screen and (max-width: 468px) {
+  .timelineContainer {
+    padding: 12px 0px;
+  }
+
+  .indicator {
+    height: 35px;
+    width: 35px;
+    font-size: 21px;
+  }
+
+  .indicator .MuiSvgIcon-root {
+    font-size: 21px;
+  }
+
+  .timelineDividerImage {
+    margin: 0px 7px;
+  }
+
+  .paymentTimeLineTextContainer {
+    width: 100%;
+    margin-left: -8px;
+  }
+
+  .subText {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}

@@ -1,0 +1,28 @@
+#rootSupport{
+    height:calc(100vh - 60px)
+
+}
+/* #rootSupport  .MuiPaper-rounded{
+    border-radius: 16px;
+} */
+
+#innerRectChat{
+    min-width:320px;
+    /* height:calc(100% - 8vh); */
+    border-radius:0;
+    
+}
+
+@media only screen and (max-width:768px){
+    #innerRect{
+        width:80vw;
+    }
+}
+
+.MuiTypography-h6{
+    line-height: 24px;
+}
+
+
+
+

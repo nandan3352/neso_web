@@ -1,0 +1,28 @@
+.otpHeader {
+  color: rgba(var(--theme-text-primary));
+}
+
+.otpDescription {
+  color: rgba(var(--theme-text-secondary));
+}
+
+.otpInputContainer input {
+  text-align: center;
+  font-size: 34px;
+  line-height: 36px;
+  caret-color: #018786;
+}
+
+.otpInputContainerLogin input {
+  text-align: center;
+  font-size: 34px;
+  line-height: 36px;
+  caret-color: #018786;
+}
+
+@media screen and (max-width: 768px) {
+  .OTPFormContainer {
+    width: 100vw;
+    max-width: 400px;
+  }
+}

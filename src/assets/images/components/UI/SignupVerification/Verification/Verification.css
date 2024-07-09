@@ -1,0 +1,51 @@
+.verificationContainer {
+  margin: 28px auto;
+  width: fit-content;
+  max-width: 400px;
+}
+
+.nesoLogo {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.verificationBottomContainer {
+  text-align: center;
+  padding-top: 48px;
+  padding-bottom: 40px;
+  border: 1px solid rgba(var(--theme-divider));
+  width: 372px;
+  height: auto;
+  /*   max-height: 400px;
+ */
+  box-sizing: border-box;
+}
+
+.MuiInput-underline:after {
+  border-bottom-color: #017374 !important;
+}
+
+.mobileVerificationTimelineContainer {
+  margin-bottom: 18px;
+}
+
+@media screen and (max-width: 468px) {
+  .verificationContainer {
+    margin: 24px auto;
+    padding: 0px 12px;
+  }
+  .nesoLogo {
+    padding: 0px 0px 20px 0px;
+  }
+  .mobileVerificationTimelineContainer, .nesoLogo {
+    width: fit-content;
+    margin: auto;
+  }
+  .verificationBottomContainer {
+    width: 100%;
+    margin-top: 20px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    max-height: auto;
+  }
+}

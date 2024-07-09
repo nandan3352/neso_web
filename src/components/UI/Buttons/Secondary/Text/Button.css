@@ -1,0 +1,24 @@
+.Secondary-text {
+    width: 77px;
+    height: 36px;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 1.25px;
+    text-transform: uppercase;
+    color: var(--theme-secondary-main);
+}
+
+.Secondary-text:hover {
+    width: 77px;
+    height: 36px;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 1.25px;
+    text-transform: uppercase;
+    color: var(--theme-secondary-main);
+    background: rgba(1, 135, 134, 0.07);
+}

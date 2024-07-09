@@ -1,0 +1,28 @@
+.Secondary-filled {
+  width: 93px;
+  height: 36px;
+  background: var(--theme-secondary-main) !important;
+  border-radius: 4px !important;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 1.25px !important;
+  text-transform: uppercase;
+  color: rgba(var(--theme-text-button-filled)) !important;
+  box-shadow: none;
+  margin: 10px;
+}
+
+.Secondary-filled:hover {
+  width: 93px;
+  height: 36px;
+  background: #026363;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 1.25px;
+  text-transform: uppercase;
+  color: rgba(var(--theme-text-button-filled));
+  box-shadow: none;
+}

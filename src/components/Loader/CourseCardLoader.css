@@ -1,0 +1,141 @@
+.Loader-Container-course {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  grid-column-gap: 20px;
+  grid-row-gap: 30px;
+}
+
+
+.placeholder-course-card{
+  border-radius: 4px;
+}
+
+@media only screen and (min-width: 1200px) {
+  .Loader-Container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-column-gap: 10px;
+    grid-row-gap: 20px;
+  }
+
+  .cw-loader {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 36px;
+  }
+
+  .title-loader {
+    margin: 52px 0 32px 0;
+  }
+
+  .rv-loader {
+    display: flex;
+    gap: 20px;
+  }
+
+  .title-loader1 {
+    display: none;
+  }
+
+  .st-loader {
+    display: flex;
+    gap: 40px;
+  }
+
+  .main-loader {
+    margin: 40px 0 0 0;
+  }
+
+  .loader-box-main {
+    margin: 32px 0 40px 0;
+  }
+
+
+  .main-loader2 {
+    display: none;
+  }
+
+  .size-on-md-lg {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .Loader-Container {
+    margin-top: 480px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 10px;
+    grid-row-gap: 30px;
+  }
+
+  .main-loader2 {
+    display: none;
+  }
+
+  .size-on-md-lg {
+    display: block;
+  }
+
+  .cw-loader {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 36px;
+  }
+
+  .title-loader {
+    margin: 52px 0 32px 0;
+  }
+
+  .title-loader1 {
+    display: none;
+  }
+
+  .rv-loader {
+    display: flex;
+    gap: 20px;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: x proximity;
+    padding-bottom: 20px;
+  }
+
+  .st-loader {
+    display: flex;
+    gap: 40px;
+  }
+
+  .main-loader {
+    margin: 50px 0 0 10px;
+  }
+
+  .hide-md {
+    display: none;
+  }
+
+  .loader-box-main {
+    margin: 32px 0 20px 0;
+  }
+
+  .size-on-md-lg {
+    display: none;
+  }
+
+}
+
+@media only screen and (max-width: 767px) {
+
+  .main-loader2 {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -20px;
+  }
+
+  .main-loader {
+    display: none;
+  }
+
+}

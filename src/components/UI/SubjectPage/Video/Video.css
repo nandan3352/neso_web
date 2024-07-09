@@ -1,0 +1,369 @@
+.video-section {
+    display: flex;
+    margin-top: 16px;
+    position: relative;
+}
+
+.video-container {
+    display: flex;
+    justify-content: flex-end;
+    width: 17.77vw;
+    max-width: 256px;
+    /* min-width: 308px;
+    justify-content: flex-end; */
+}
+
+@keyframes videoAnimation {
+    0% {
+        left: 30px
+    }
+
+    100% {
+        left: 0px;
+    }
+}
+
+.video-number {
+    align-self: center;
+    display: flex;
+    align-items: center;
+    margin: 0 32px;
+    width: 16px;
+}
+
+.video-number p {
+    font-size: 14px;
+    letter-spacing: 0.25px;
+    line-height: 24px;
+    color: rgba(var(--theme-text-secondary));
+}
+
+.video-thumbnail {
+    max-width: 176px;
+    max-height: 99px;
+    width: 12.22vw;
+    height: 6.87vw;
+    position: relative;
+    flex-shrink: 0;
+}
+
+.video-thumbnail-img {
+    width: 100%;
+    height: 100%;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.video-thumbnail-overlay {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    background-color: #000000;
+    opacity: 0;
+    transition: opacity 300ms ease;
+}
+
+.video-thumbnail-overlay-icon {
+    top: 35%;
+    bottom: 0;
+    left: 40%;
+    right: 0;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 300ms ease;
+}
+
+.video-thumbnail-overlay-icon {
+    width: 36px;
+    height: 36px;
+}
+
+.video-thumbnail:hover .video-thumbnail-overlay {
+    opacity: 0.4;
+}
+
+.video-thumbnail:hover .video-thumbnail-overlay-icon {
+    opacity: 0.8;
+}
+
+.video-fuel-img {
+    top: calc(50% - 36px);
+    /* width: 48px;
+    height: 48px; */
+}
+
+.video-duration-subject {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 40px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.87);
+    border-radius: 4px;
+    opacity: 0.9;
+    padding: 0 6px;
+}
+
+.video-duration-subject p {
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.1px;
+    line-height: 24px;
+}
+
+.video-title {
+    /* width: 24vw;
+    max-width: 349px; */
+    flex-grow: 1;
+    margin: 0 0 0 20px;
+    color: rgb(var(--theme-text-primary));
+}
+
+.video-title p {
+    margin: 0;
+    font-size: 16px;
+    letter-spacing: 0.15px;
+    line-height: 24px;
+}
+
+.video-more {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 34px;
+}
+
+.video-more button {
+    margin-top: -12px;
+}
+
+.video-more div:nth-child(1) {
+    margin-top: 4px;
+}
+
+.video-more div:nth-child(2) {
+    margin: 2px 0;
+}
+
+.video-more div:nth-child(3) {
+    margin-bottom: 4px;
+}
+
+.clicked-more {
+    box-sizing: border-box;
+    position: absolute;
+    right: 0;
+    top: 32px;
+    width: 13.81vw;
+    align-items: flex-start;
+    display: flex;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    flex-direction: column;
+    border-radius: 4px;
+    border: 1px solid rgba(var(--theme-divider));
+    transition: all 0.2s;
+    transform: scale(0);
+    background: var(--theme-background-surface);
+    z-index: 16;
+    transform-origin: top right;
+}
+
+.clicked-more>* {
+    display: flex;
+    align-items: center;
+}
+
+.clicked-more-item {
+    padding-left: 16px;
+    display: flex;
+    width: 100%;
+    justify-content: start;
+    align-items: center;
+    height: 40px;
+    cursor: pointer;
+}
+
+.clicked-more-item div {
+    margin-left: 21px;
+    color: rgba(var(--theme-text-primary));
+    font-size: 16px;
+    letter-spacing: 0.15px;
+}
+
+#more-clicked {
+    transform: scale(1);
+}
+
+#transparent-section {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    cursor: auto;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 12;
+    background-color: transparent;
+}
+
+/*hovers*/
+
+.video-thumbnail:hover,
+.video-title:hover,
+.video-more:hover {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1200px) {
+
+    .video-thumbnail {
+        width: 13.22vw;
+        height: 7.87vw;
+    }
+}
+
+@media screen and (max-width: 1344px) {
+    .clicked-more {
+        width: 15.81vw;
+        padding: 10px;
+    }
+
+    .clicked-more-item span {
+        font-size: 14px;
+    }
+
+    .clicked-more-item img {
+        max-width: 14px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+
+
+    .video-container{
+        width: 33.3vw;
+    }
+    
+
+    .video-section {
+        max-width: 100%;
+    }
+
+    .video-thumbnail {
+        width: 22.96vw;
+        height: 12.89vw;
+    }
+
+
+    .video-more {
+        margin-left: auto;
+        margin-right: 12px;
+    }
+
+    .clicked-more {
+        width: 25.91vw;
+        padding: 16px;
+    }
+
+    .clicked-more-item {
+        padding: 0;
+    }
+
+
+    .clicked-more-item span {
+        font-size: 16px;
+    }
+
+    .clicked-more-item img {
+        max-width: auto;
+    }
+}
+
+@media screen and (max-width: 690px) {
+
+    
+
+    .clicked-more {
+        width: 26.91vw;
+        padding: 10px;
+    }
+
+    .clicked-more-item {
+        padding: 0px
+    }
+
+    .clicked-more-item span {
+        font-size: 14px;
+    }
+
+    .clicked-more-item img {
+        max-width: 14px;
+    }
+}
+
+@media screen and (max-width: 630px) {
+    .video-section {
+        width: 100%;
+        max-width: 100%;
+        margin: 2px 0 12px 0 !important;
+    }
+
+    .video-container {
+        margin-left: 0px !important;
+    }
+
+    .video-number {
+        display: none;
+    }
+
+    .video-thumbnail {
+        margin-left: 16px;
+        width: 34.18vw;
+        height: 19.23vw;
+    }
+
+    .video-title {
+        margin: 0 0 0 16px;
+    }
+
+    .video-more {
+        margin-left: auto;
+        margin-right: 12px;
+    }
+
+    .video-duration-subject {
+        bottom: 0px;
+    }
+
+    .clicked-more {
+        width: 20em;
+    }
+
+    /* #transparent-section {
+        display: none;
+    } */
+}
+
+@media screen and (max-width : 400px) {
+
+    .video-container{
+        width: auto;
+    }
+
+    .video-fuel-img {
+        top: 0;
+        height: 100%;
+    }
+}

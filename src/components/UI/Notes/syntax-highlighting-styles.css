@@ -1,0 +1,257 @@
+/* These preprocessors will be available in hosting environment */
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&family=Lato:ital,wght@0,400;0,700;1,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&display=swap');
+
+/*custom code syntax styles (One of PrismJs theme)*/
+
+code[class*="language-"],
+pre[class*="language-"] {
+    color: rgba(var(--theme-text-primary));
+    background: none;
+    text-align: left;
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 1.5;
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 4;
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+}
+
+pre[class*="language-"]::-moz-selection,
+pre[class*="language-"] ::-moz-selection,
+code[class*="language-"]::-moz-selection,
+code[class*="language-"] ::-moz-selection {
+    background: #8da1b9;
+}
+
+pre[class*="language-"]::selection,
+pre[class*="language-"] ::selection,
+code[class*="language-"]::selection,
+code[class*="language-"] ::selection {
+    background: #8da1b9;
+}
+
+/* Code blocks */
+
+pre[class*="language-"] {
+    padding: 1em;
+    margin: 0.5em 0;
+    overflow: auto;
+}
+
+:not(pre)>code[class*="language-"],
+pre[class*="language-"] {
+    background: var(--theme-surface);
+}
+
+/* Inline code */
+
+:not(pre)>code[class*="language-"] {
+    padding: 0.1em 0.3em;
+    border-radius: 0.3em;
+    white-space: normal;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+    color: var(--syntax-comment, #007400)
+}
+
+.token.punctuation {
+    color: rgba(var(--theme-text-primary));
+}
+
+.token.delimiter.important,
+.token.selector .parent,
+.token.tag,
+.token.tag .token.punctuation {
+    color: #006d6d;
+}
+
+.token.attr-name,
+.token.boolean,
+.token.boolean.important,
+.token.number,
+.token.constant,
+.token.selector .token.attribute {
+    color: #755f00;
+}
+
+.token.class-name,
+.token.key,
+.token.parameter,
+.token.property,
+.token.property-access,
+.token.variable {
+    color: var(--syntax-keyword, #AA0D91);
+}
+
+.token.attr-value,
+.token.inserted,
+.token.color,
+.token.selector .token.value,
+.token.string,
+.token.string .token.url-link {
+    color: var(--syntax-string, #C41A16);
+}
+
+.token.builtin,
+.token.keyword-array,
+.token.package,
+.token.regex {
+    color: #af00af;
+}
+
+.token.function,
+.token.selector .token.class,
+.token.selector .token.id {
+    color: rgba(var(--theme-text-primary));
+}
+
+.token.atrule .token.rule,
+.token.combinator,
+.token.keyword,
+.token.operator,
+.token.pseudo-class,
+.token.pseudo-element,
+.token.selector,
+.token.unit {
+    color: var(--syntax-keyword, #AA0D91);
+}
+
+.token.deleted,
+.token.important {
+    color: #c22f2e;
+}
+
+.token.keyword-this,
+.token.this {
+    color: #005a8e;
+}
+
+.token.important,
+.token.keyword-this,
+.token.this,
+.token.bold {
+    font-weight: bold;
+}
+
+.token.delimiter.important {
+    font-weight: inherit;
+}
+
+.token.italic {
+    font-style: italic;
+}
+
+.token.entity {
+    cursor: help;
+}
+
+.language-markdown .token.title,
+.language-markdown .token.title .token.punctuation {
+    color: #005a8e;
+    font-weight: bold;
+}
+
+.language-markdown .token.blockquote.punctuation {
+    color: #af00af;
+}
+
+.language-markdown .token.code {
+    color: #006d6d;
+}
+
+.language-markdown .token.hr.punctuation {
+    color: #005a8e;
+}
+
+.language-markdown .token.url>.token.content {
+    color: #116b00;
+}
+
+.language-markdown .token.url-link {
+    color: #755f00;
+}
+
+.language-markdown .token.list.punctuation {
+    color: #af00af;
+}
+
+.language-markdown .token.table-header {
+    color: #111b27;
+}
+
+.language-json .token.operator {
+    color: #111b27;
+}
+
+.language-scss .token.variable {
+    color: #006d6d;
+}
+
+/* ! Web editor styles ! */
+
+.editor-title {
+    margin: 60px 0px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 34px;
+    line-height: 40px;
+}
+
+/* Alignment styles for images, videos and iframes in editable regions */
+
+/* Center (default) */
+
+[data-editable] iframe,
+[data-editable] image,
+[data-editable] [data-ce-tag=img],
+[data-editable] img,
+[data-editable] video {
+    clear: both;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+}
+
+/* Left align */
+
+[data-editable] .align-left {
+    clear: initial;
+    float: left;
+    margin-right: 0.5em;
+}
+
+/* Right align */
+
+[data-editable].align-right {
+    clear: initial;
+    float: right;
+    margin-left: 0.5em;
+}
+
+/* Alignment styles for text in editable regions */
+
+[data-editable] .text-center {
+    text-align: center;
+}
+
+[data-editable] .text-left {
+    text-align: left;
+}
+
+[data-editable] .text-right {
+    text-align: right;
+}

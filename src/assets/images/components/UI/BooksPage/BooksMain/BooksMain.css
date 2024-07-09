@@ -1,0 +1,80 @@
+.books-left-section {
+    overflow-y: scroll;
+    position: sticky;
+    top: 0px;
+    height: 100vh;
+}
+
+.books-right-section {
+    padding-left: 16px;
+}
+
+
+
+@media (hover: hover) {
+    .books-left-section {
+        mask-image: linear-gradient(to top, transparent, black),
+            linear-gradient(to left, transparent 10px, black 10px);
+        mask-size: 100% 20000px;
+        mask-position: left bottom;
+        -webkit-mask-image: linear-gradient(to top, transparent, black),
+            linear-gradient(to left, transparent 10px, black 10px);
+        -webkit-mask-size: 100% 20000px;
+        -webkit-mask-position: left bottom;
+        transition: mask-position 0.3s, -webkit-mask-position 0.3s;
+    }
+
+    .books-left-section:hover {
+        -webkit-mask-position: left top;
+        mask-position: left top;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .books-page {
+        width: 1156px;
+        margin: 0 auto;
+        display: flex;
+    }
+
+    .books-left-section {
+        display: block;
+        width: 25%;
+    }
+
+    .books-right-section {
+        width: 75%;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+
+    .books-section {
+        width: 100%;
+    }
+
+    .books-page {
+        /*display: flex;*/
+        /*justify-content: center;*/
+    }
+
+    .books-right-section {
+        /*display: flex;*/
+        /*justify-content: center;*/
+    }
+
+    .books-left-section {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 468px) {
+    .books-page {
+        width: 100%;
+        display: flex;
+    }
+
+    .books-left-section {
+        display: none;
+    }
+}

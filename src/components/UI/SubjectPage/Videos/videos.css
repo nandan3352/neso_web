@@ -1,0 +1,10 @@
+.videos-section {
+    width: 100%;
+}
+
+@media screen and (max-width: 630px) {
+    .videos-section {
+        width: 100%;
+        margin-left: 16px !important;
+    }
+}

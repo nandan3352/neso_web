@@ -1,0 +1,23 @@
+.ppt-view-section {
+    width: 100%;
+    display: flex;
+/*     overflow-x: hidden;
+ */ position: relative;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+/* .ppt-view-left-section {
+    width: 37.08vw;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 60px;
+    z-index: 123;
+} */
+
+.ppt-view-right-section {
+    width: 100%;
+    position: relative;
+}

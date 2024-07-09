@@ -1,0 +1,150 @@
+.teamtitle {
+  text-align: center;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 34px;
+  line-height: 36px;
+  /* identical to box height, or 106% */
+
+  /* 00. On Surface / High Emphasis */
+
+  color: rgba(var(--theme-text-primary));
+}
+.teamSubTitle {
+  text-align: center;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+  margin-top: 16px;
+  letter-spacing: 0.15px;
+
+  /* 00. On Surface / Medium Emphasis */
+
+  color: rgba(var(--theme-text-secondary));
+}
+.teamCluster {
+  margin-top: 20px !important;
+  width: 80%;
+  margin: 0 10% 100px;
+}
+.teamContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.memberName {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+
+  text-align: center;
+  letter-spacing: 0.15px;
+
+  /* 00. On Surface / High Emphasis */
+  margin-top: 16px;
+  color: rgba(var(--theme-text-primary));
+  width: 92px;
+}
+.memberRole {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  /* identical to box height, or 143% */
+
+  text-align: center;
+  letter-spacing: 0.25px;
+
+  /* 00. On Surface / Medium Emphasis */
+
+  color: rgba(0, 0, 0, 0.6);
+  width: 140px;
+}
+.memberImg {
+  width: 152px;
+  height: 152px;
+}
+.Team {
+  margin-top: 48px;
+}
+.Hire {
+  height: 152px;
+  width: 152px;
+  border: 1px solid rgba(var(--theme-divider));
+  box-sizing: border-box;
+  border-radius: 188px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 22px;
+  /* align-items: center; */
+}
+.hireContent > p:nth-child(1) {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  /* identical to box height, or 120% */
+
+  text-align: center;
+  letter-spacing: 0.15px;
+
+  /* 00. On Surface / High Emphasis */
+
+  color: rgba(var(--theme-text-primary));
+}
+.hireContent > p:nth-child(2) {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+
+  text-align: center;
+  letter-spacing: 0.15px;
+
+  /* 00. On Surface / Medium Emphasis */
+
+  color: rgba(var(--theme-text-secondary));
+}
+.teamHire {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+}
+@media screen and (max-width: 5000px) and (min-width: 1800px) {
+  .teamCluster {
+    width: 60%;
+    margin: 0 20%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .memberImg {
+    width: 130px;
+    height: 130px;
+  }
+}
+@media only screen and (max-width: 468px) {
+  .memberImg {
+    width: 80px;
+    height: 80px;
+  }
+  .memberRole {
+    width: 99px;
+  }
+  .Hire {
+    width: 80px;
+    height: 80px;
+  }
+  .hireContent > p:nth-child(1) {
+    font-size: 14px;
+  }
+  .hireContent > p:nth-child(2) {
+    font-size: 12px;
+  }
+}

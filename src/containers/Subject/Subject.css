@@ -1,0 +1,184 @@
+.subject-page-section {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    max-width: 1156px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.subject-page {
+    background: rgba(var(--theme-background-default));
+}
+
+.left-section {
+    position: sticky;
+    top: 60px;
+    left: 0;
+    z-index: 4;
+    height: 95vh;
+    overflow-y: scroll;
+    overflow-x: visible;
+    box-sizing: border-box;
+    max-width: 372px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    min-width: 372px;
+    margin: 0;
+    padding-right: 10px;
+}
+
+.left-section::-webkit-scrollbar {
+    background-color: rgba(var(--theme-background-default));
+    border-radius: 4px;
+    /* height: 1px; */
+    width: 8px;
+}
+
+.left-section::-webkit-scrollbar-thumb {
+    background-color: var(--theme-scrollbar-thumb);
+    border-radius: 4px;
+}
+
+/* .left-section::-webkit-scrollbar {
+    display: none;
+} */
+
+.right-section {
+    flex-grow: 1;
+    border-left: 1px solid rgba(var(--theme-divider));
+    position: relative;
+    left: 0;
+    width: 100%;
+}
+
+.recommended-chapters-subject-page {
+    /* width: 80.27vw;
+    max-width: 1156px; */
+    padding-top: 17px;
+    margin: 0px auto 65px auto;
+    border-top: 1px solid rgba(var(--theme-divider));
+}
+
+.recommended-chapters-heading {
+    font-size: 20px;
+    letter-spacing: 0.15px;
+    font-weight: 500;
+    color: rgba(var(--theme-text-primary));
+    margin-bottom: 32px;
+}
+
+.recommended-chapters-details {
+    display: flex;
+}
+
+.recommended-chapter {
+    margin-right: 20px;
+}
+
+.recommended-chapter-img {
+    max-width: 19.02vw;
+}
+
+.recommended-chapter-name {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.recommended-chapter-name p {
+    margin-top: 8px;
+    width: 85.40%;
+    font-size: 16px;
+    letter-spacing: 0.15px;
+    color: rgba(0, 0, 0, 0.87)
+}
+
+@media screen and (max-width: 1300px) {
+    .recommended-chapter-name p {
+        font-size: 14px;
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .subject-page-section {
+        display: block;
+    }
+    .left-section {
+        position: static;
+        height: auto;
+        max-width: inherit;
+        width: 100%;
+        padding: 0;
+        border-right: none;
+        display: block;
+        margin: 0 auto;
+    }
+    .right-section {
+        width: 100%;
+        border-left: none;
+        position: static;
+    }
+    .recommended-chapters-subject-page {
+        width: 91.66vw;
+        max-width: 704px;
+        margin: 31px auto 58px auto;
+    }
+    .recommended-chapter {
+        width: 44.53vw;
+        max-width: 342px;
+        margin-right: 0;
+    }
+    .recommended-chapters-details {
+        flex-wrap: wrap;
+        row-gap: 34px;
+        justify-content: space-between;
+    }
+    .recommended-chapter-img {
+        width: 100%;
+        max-width: 342px;
+    }
+    .recommended-chapter-name {
+        justify-content: flex-start;
+    }
+    .recommended-chapter-name p {
+        width: 90.64%;
+        font-size: 16px;
+    }
+}
+
+@media (hover: hover) and (min-width: 640px) {
+    .left-section {
+        mask-image: linear-gradient(to top, transparent, black), linear-gradient(to left, transparent 17px, black 17px);
+        mask-size: 100% 20000px;
+        mask-position: left bottom;
+        -webkit-mask-image: linear-gradient(to top, transparent, black), linear-gradient(to left, transparent 17px, black 17px);
+        -webkit-mask-size: 100% 20000px;
+        -webkit-mask-position: left bottom;
+        transition: mask-position 0.3s, -webkit-mask-position 0.3s;
+    }
+    .left-section:hover {
+        -webkit-mask-position: left top;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .recommended-chapters-subject-page {
+        display: none;
+    }
+
+    .left-section {
+        scrollbar-width: none;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .subject-page {
+        margin: auto;
+        width: 1280px;
+    }
+}

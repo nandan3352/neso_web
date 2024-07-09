@@ -1,0 +1,98 @@
+:root{
+    --hover-more: 0;
+    --hover-complete : 1;
+}
+
+.ppt-section {
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 68px;
+    /* overflow: hidden; */
+}
+
+.ppt-container {
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+}
+
+.ppt-section:hover{
+    background-color: rgba(var(--theme-surface-main));
+    border-radius: 4px;
+    
+}
+
+.ppt-thumbnail {
+    position: relative;
+}
+
+.ppt-thumbnail span {
+    font-size: 20px;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 1);
+    position: absolute;
+    right: 50%;
+    bottom: 50%;
+    transform: translate(50%, 50%);
+}
+
+.ppt-section-name {
+    margin-left: 16px;
+}
+
+
+.ppt-section-name p:nth-child(1) {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+    color: rgba(var(--theme-text-primary));
+}
+
+.ppt-section-name p:nth-child(2) {
+    font-size: 12px;
+    letter-spacing: 0.4px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.ppt-section-arrow {
+    cursor: pointer;
+    margin-right: 32px;
+    position: relative;
+    width: 40px;
+    height: 40px;
+}
+
+.ppt-section:hover{
+    --hover-more: 1;
+    --hover-complete: 0;
+}
+
+.ppt-icon-more{
+    position: absolute;
+    opacity: var(--hover-more);
+    transition: opacity 300ms ease;
+}
+
+.ppt-icon-tick{
+    position: absolute;
+    opacity: var(--hover-complete);
+    transition: opacity 300ms ease;
+}
+
+.complete{
+    opacity: 1;
+}
+
+@media screen and (max-width: 630px) {
+    .ppt-section-name {
+        margin-left: 16px;
+    }
+}
+
+@media screen and (max-width: 630px) {
+    .ppt-container {
+        padding-left: 0;
+    }
+}

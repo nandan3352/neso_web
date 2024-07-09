@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@700&display=swap');
+.chapter-number {
+    position: absolute;
+    left: 17.86%;
+    right: 17.86%;
+    bottom: 28.57%;
+    font-family: Fira Code;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: -2.5px;
+    color: #FFFFFF;
+}
+
+.qnn-logo {
+    position: relative;
+}
+
+@media only screen and (min-width: 1199px) {
+    .qnn-main-sm {
+        display: none;
+    }
+    .qnn-title-row-sm {
+        display: flex;
+        padding: 16px 0px 16px 0;
+    }
+    .qnn-title-sm {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: 0.15px;
+        color: rgba(var(--theme-text-primary));
+    }
+    .qnn-lower-section-sm {
+        display: grid;
+        grid-template-columns: 100%;
+    }
+    .qnn-content-border-sm {
+        display: flex;
+        width: 100%;
+        height: 72px;
+        box-sizing: border-box;
+        cursor: pointer;
+    }
+    .qnn-content-border-sm:hover {
+        background-color: rgba(var(--theme-surface-main));
+        border-radius: 4px;
+    }
+    .qnn-img-sm {
+        padding: 12px 0 12px 0px;
+    }
+    .qnn-content-inside-sm {
+        padding: 15px 0 0 22px;
+    }
+    .qnn-content-title-sm {
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.15px;
+        color: rgba(var(--theme-text-primary));
+    }
+    .qnn-content-pg-no-sm {
+        padding-top: 2px;
+        font-size: 12px;
+        line-height: 16px;
+        letter-spacing: 0.4px;
+        color: rgba(var(--theme-text-secondary));
+    }
+    .qnn-content-arrow-sm {
+        padding: 24px 16px 0 0;
+    }
+}
+
+@media only screen and (max-width: 1199px) {
+    .qnn-main-sm {
+        display: none;
+    }
+    .qnn-title-row-sm {
+        display: flex;
+        padding: 16px 0px 16px 0;
+    }
+    .qnn-title-sm {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: 0.15px;
+        color: rgba(var(--theme-text-primary));
+    }
+    .qnn-lower-section-sm {
+        display: grid;
+        grid-template-columns: 100%;
+    }
+    .qnn-content-border-sm {
+        display: flex;
+        width: 100%;
+        height: 72px;
+        box-sizing: border-box;
+        cursor: pointer;
+    }
+    .qnn-content-border-sm:hover {
+        background-color: rgba(var(--theme-surface-main));
+        border-radius: 4px;
+    }
+    .qnn-img-sm {
+        padding: 12px 0 12px 0px;
+    }
+    .qnn-content-inside-sm {
+        padding: 15px 0 0 22px;
+    }
+    .qnn-content-title-sm {
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.15px;
+        color: rgba(var(--theme-text-primary));
+    }
+    .qnn-content-pg-no-sm {
+        padding-top: 2px;
+        font-size: 12px;
+        line-height: 16px;
+        letter-spacing: 0.4px;
+        color: rgba(var(--theme-text-secondary));
+    }
+    .qnn-content-arrow-sm {
+        padding: 24px 16px 0 0;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .qnn-main-sm {
+        display: block;
+        height: 360px;
+        box-sizing: border-box;
+        border-bottom: 1px solid rgba(var(--theme-surface-main));
+        margin-right: 16px;
+    }
+    .qnn-title-row-sm {
+        display: flex;
+        padding: 16px 0px 16px 0;
+    }
+    .qnn-title-sm {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: 0.15px;
+        color: rgba(var(--theme-text-primary));
+    }
+    .qnn-lower-section-sm {
+        display: grid;
+        grid-template-columns: 100%;
+    }
+    .qnn-content-border-sm {
+        display: flex;
+        width: 100%;
+        height: 72px;
+        box-sizing: border-box;
+        cursor: pointer;
+    }
+    .qnn-content-border-sm:hover {
+        background-color: rgba(var(--theme-surface-main));
+        border-radius: 4px;
+    }
+    .qnn-img-sm {
+        padding: 12px 0 12px 0px;
+    }
+    .qnn-content-inside-sm {
+        padding: 15px 0 0 22px;
+    }
+    .qnn-content-title-sm {
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.15px;
+        color: rgba(var(--theme-text-primary));
+    }
+    .qnn-content-pg-no-sm {
+        padding-top: 2px;
+        font-size: 12px;
+        line-height: 16px;
+        letter-spacing: 0.4px;
+        color: rgba(var(--theme-text-secondary));
+    }
+    .qnn-content-arrow-sm {
+        padding: 24px 16px 0 0;
+    }
+}

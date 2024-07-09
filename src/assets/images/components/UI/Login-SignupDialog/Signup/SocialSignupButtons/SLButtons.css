@@ -1,0 +1,18 @@
+.bLogo {
+    display: flex;
+}
+
+.bTextGoogle {
+    margin: 0px 18px;
+    color: rgba(var(--theme-text-secondary));
+}
+
+.bTextFacebook {
+    margin-left: 18px;
+    color: rgba(var(--theme-text-secondary));
+}
+
+.bTextMobile {
+    margin: 0px 18px;
+    color: rgba(var(--theme-text-secondary));
+}

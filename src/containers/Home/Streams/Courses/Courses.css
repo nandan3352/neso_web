@@ -1,0 +1,65 @@
+@media only screen and (min-width: 1200px) {
+  .grid-container {
+    justify-content: stretch;
+    align-items: stretch;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-row-gap: 32px;
+    column-gap: 20px;
+    grid-column-gap: 20px;
+  }
+  .grid-item {}
+}
+
+@media only screen and (max-width: 1200px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-row-gap: 32px;
+    grid-column-gap: 20px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-row-gap: 32px;
+    grid-column-gap: 20px;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row-gap: 32px;
+    grid-column-gap: 20px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .grid-container {
+    display: flex;
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    padding-top: 32px;
+    grid-column-gap: 0px;
+    scrollbar-width: none;
+    /* for firefox */
+    -ms-overflow-style: none;
+    /* for IE */
+  }
+  .grid-item {
+    margin-right: 20px;
+  }
+  .grid-container::-webkit-scrollbar {
+    display: none;
+  }
+  /* ::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+  } */
+}

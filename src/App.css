@@ -1,0 +1,4 @@
+* {
+  transition: background-image 225ms ease-in,  margin-top 225ms ease, background-color 225ms ease-in,color 225ms ease-in,background 225ms ease-in;
+  scrollbar-width: thin;
+}
